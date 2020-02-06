@@ -17,6 +17,7 @@
       <div> {{ info }} </div>
     </v-card-text>
 
+    <!-- 
     <v-card-actions>
       <v-btn
         color="orange"
@@ -24,7 +25,7 @@
       >
         Acheter
       </v-btn>
-    </v-card-actions>
+    </v-card-actions> -->
   </v-card>
 </template>
 
