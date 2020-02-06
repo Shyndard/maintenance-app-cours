@@ -4,50 +4,27 @@
       app
       color="primary"
       dark
+      dense
     >
       <div class="d-flex align-center">
-        <v-img
-          alt="Vuetify Logo"
-          class="shrink mr-2"
-          contain
-          src="https://cdn.vuetifyjs.com/images/logos/vuetify-logo-dark.png"
-          transition="scale-transition"
-          width="40"
-        />
-
-        <v-img
-          alt="Vuetify Name"
-          class="shrink mt-1 hidden-sm-and-down"
-          contain
-          min-width="100"
-          src="https://cdn.vuetifyjs.com/images/logos/vuetify-name-dark.png"
-          width="100"
-        />
+        <h1>CMB</h1>
       </div>
 
       <v-spacer></v-spacer>
-
-      <v-btn
-        href="https://github.com/vuetifyjs/vuetify/releases/latest"
-        target="_blank"
-        text
-      >
-        <span class="mr-2">Latest Release</span>
-        <v-icon>mdi-open-in-new</v-icon>
-      </v-btn>
     </v-app-bar>
-
-    <v-container fluid>
-      <v-row dense>
-        <v-col
-          v-for="card in cards"
-          :key="card.title"
-          cols="4"
-        >
-          <ProductCard :title="card.title" :prix="card.prix" :info="card.info" :imageUri="card.imageUri"/>
-        </v-col>
-      </v-row>
-    </v-container>
+    <div class="test">
+      <v-container fluid>
+        <v-row dense>
+          <v-col
+            v-for="card in cards"
+            :key="card.title"
+            cols="4"
+          >
+            <ProductCard :title="card.title" :prix="card.prix" :info="card.info" :imageUri="card.imageUri"/>
+          </v-col>
+        </v-row>
+      </v-container>
+    </div>
   </v-app>
 </template>
 
@@ -78,3 +55,9 @@ export default {
   }),
 };
 </script>
+
+<style scoped>
+.test {
+  padding-top: 5%
+}
+</style>

@@ -2,6 +2,7 @@
   <v-card
     class="mx-auto"
     max-width="400"
+    outlined
   >
     <v-img
       class="white--text align-end"
